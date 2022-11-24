@@ -228,6 +228,8 @@ img {
 .nav__link{
   display: flex;
   flex-direction: column;
+  /* 네비게이션 바 over-size로 했을때 위치 수정  */
+  margin-top: var(--mb-0-5); 
   align-items: center;
   font-size: var(--small-font-size);
   color: var(--title-color);
@@ -558,8 +560,8 @@ img {
 /*==================== QUALIFICATION ====================*/
 .qualification__tabs{
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: var(--mb-2);
+  
+  margin-bottom:  var(--mb-2);
 }
 
 .qualification__button{
@@ -569,13 +571,13 @@ img {
 }
 
 .qualification__button:hover{
-  color: var(--first-color);
+  color: var(--first-color)
 }
 
 .qualification__icon{
   font-size: 1.8rem;
   margin-right: var(--mb-0-25);
-}__
+}
 
 .qualification__data{
   display: grid;
@@ -626,6 +628,7 @@ img {
 .qualification__button.qualification__active{
   color: var(--first-color);
 }
+
 
 
 /*==================== PORTFOLIO ====================*/
@@ -958,7 +961,7 @@ img {
   }
 
   .nav__icon,
-  .nav__close,
+  .nav-close,
   .nav__toggle{
       display:none;
   }
