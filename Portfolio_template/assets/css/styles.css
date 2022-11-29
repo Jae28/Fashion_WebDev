@@ -7,19 +7,19 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 230; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: #111; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-    --title-color: hsl(var(--hue-color), 8%, 15%);
+    --title-color: #fff;
     --text-color: hsl(var(--hue-color), 8%, 45%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
     --body-color: hsl(var(--hue-color), 60%, 99%);
-    --container-color: #fff;
+    --container-color: #928490;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
@@ -90,7 +90,7 @@ body.dark-theme{
 
 .change-theme{
   font-size: 1.25rem;
-  color: var(--title-color);
+  color: black;
   margin-right: var(--mb-1);
   cursor: pointer;
 }
@@ -114,9 +114,10 @@ body {
   margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--body-color);
+  background-color: #025054;
   color: var(--text-color);
 }
+
 
 h1, h2, h3, h4 {
   color: var(--title-color);
@@ -162,6 +163,7 @@ img {
   max-width: 768px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
+  background-color: #fff;
 }
 
 .grid {
@@ -175,7 +177,7 @@ img {
   bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--body-color);
+  background-color: #fff;
 }
 
 /*==================== NAV ====================*/
@@ -189,7 +191,7 @@ img {
 
 .nav__logo,
 .nav__toggle{
-  color: var(--title-color);
+  color: black;
   font-weight: var(--font-medium);
 }
 
@@ -232,12 +234,12 @@ img {
   margin-top: var(--mb-0-5); 
   align-items: center;
   font-size: var(--small-font-size);
-  color: var(--title-color);
+  color: black;
   font-weight: var(--font-medium);
 }
 
 .nav__link:hover{
-  color: var(--first-color);
+  color: #025054;
 }
 
 .nav__icon{
@@ -247,14 +249,15 @@ img {
 .nav__close{
   position: absolute;
   right: 1.3rem;
-  bottom: .5rem;
+  /* 위치수정 */
+  bottom: .8rem;
   font-size: 1.5rem;
   cursor: pointer;
   color: var(--first-color);
 }
 
 .nav__close:hover{
-  color: var(--first-color-alt);
+  color: #025054;
 }
 /* show menu */
 .show-menu{
@@ -274,6 +277,7 @@ img {
 /*==================== HOME ====================*/
 .home__container{
   gap: 1rem;
+  background-color: #025054;
 }
 
 .home__content{
@@ -290,7 +294,7 @@ img {
 
 .home__social-icon{
   font-size:  1.25rem;
-  color: var(--first-color);
+  color: black;
 }
 
 .home__social-icon:hover{
@@ -299,7 +303,7 @@ img {
 
 .home__blob{
   width: 200px;
-  fill: var(--first-color);
+  fill: #fff;
 }
 
 .home__blob-img{
@@ -365,7 +369,7 @@ img {
 }
 
 .button:hover{
-  background-color: var(--first-color-alt);
+  background-color: #025054;
 }
 
 .button__icon{
@@ -390,14 +394,18 @@ img {
 }
 
 .button--link:hover{
-  background-color: var(--first-color-alt);
+  background-color: #025054;
 }
 /*==================== ABOUT ====================*/
+.about__container{
+  background-color: #025054;
+}
 .about__img{
   width: 200px;
   border-radius: .5rem;
   justify-self: center;
   align-self: center;
+  
 }
 
 .about__description{
@@ -435,6 +443,7 @@ img {
 /*==================== SKILLS ====================*/
 .skills__container{
   row-gap: 0;
+  background-color: #025054;
 }
 
 .skills__header{
@@ -558,6 +567,10 @@ img {
   transform: rotate(-180deg);
 }
 /*==================== QUALIFICATION ====================*/
+.qualification__container{
+  background-color: #025054;
+}
+
 .qualification__tabs{
   display: flex;
   
@@ -571,7 +584,7 @@ img {
 }
 
 .qualification__button:hover{
-  color: var(--first-color)
+  color: #025054
 }
 
 .qualification__icon{
@@ -634,6 +647,7 @@ img {
 /*==================== PORTFOLIO ====================*/
 .portfolio__container{
   overflow: initial;
+  background-color: #025054;
 }
 
 .portfolio__content{
@@ -697,6 +711,7 @@ img {
 /*==================== CONTACT ME ====================*/
 .contact__container{
   row-gap: 3rem;
+  background-color: #025054;
 }
 
 .contact__information{
@@ -722,7 +737,7 @@ img {
 }
 
 .contact__content{
-  background-color: var(--input-color);
+  background-color: #fff;
   border-radius: .5rem;
   padding: .75rem 1rem .25rem;
 }
@@ -732,7 +747,7 @@ img {
   color: var(--title-color);
 }
 
-.contact_-input{
+.contact__input{
   width: 100%;
   background-color: var(--input-color);
   color: var(--text-color);
@@ -749,20 +764,23 @@ img {
 
 .footer_container{
   row-gap: 3.5rem;
+  background-color: #fff;
 }
 
 .footer__bg{
-  background-color: var(--first-color-second);
+  background-color: #fff;
   padding: 2rem 0 3rem;
 }
 
 .footer__title{
   font-size: var(--h1-font-size);
   margin-bottom: var(--mb-0-25);
+  color: black;
 }
 
 .footer__subtitle{
   font-size: var(--small-font-size);
+  color: black;
 }
 
 .footer__links{
@@ -781,21 +799,13 @@ img {
 }
 
 .footer__social:hover{
-  color: var(--first-color-lighter);
+  color: #025054;
 }
-
-.footer__copy{
-  font-size: var(--smaller-font-size);
-  text-align: center;
-  color: var(--text-color-light);
-  margin-top: var(--mb-3);
-}
-
 .footer__title,
 .footer__subtitle,
 .footer__link,
 .footer__social{
-  color: #fff;
+  color: black;
 }
 /*========== SCROLL UP ==========*/
 .scrollup{
@@ -903,7 +913,7 @@ img {
 
    .about__container,
    .portfolio__content,
-   .project__container,
+   /* .project__container, */
    .contact__container,
    .footer__container
    {
@@ -929,7 +939,7 @@ img {
       margin-right: auto;
   }
 
-  body{
+  .body{
       margin: 0;
   }
 
