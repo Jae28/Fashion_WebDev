@@ -24,8 +24,13 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
         </div>
     </section>
 
@@ -395,6 +400,75 @@
             <h3>New Trendy Prints</h3>
         </div>
     </section>
+
+    <section id="newsletter" class="section-p1 section-m1" >
+        <!-- 같은 라인에 왼쪽 텍스트를 담당할 div -->
+        <div class="newstext">
+            <h4>Sign Up For newsletter</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span>  </p>
+        </div>
+
+        <!-- 같은 라인에 sign up form을 담당할 div -->
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/Logo-removebg-preview.png" alt="">
+            <h4>Contact</h4>
+            <!-- strong 태그로 볼드체로 바꿀수있음 -->
+            <p> <strong>Address:</strong> 1728 Dadnenong Rd Clayton 3168</p>
+            <p> <strong>Phone:</strong> +61 0423-167-164 / +82 10-8288-6972</p>
+            <p> <strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img class="logo2" src="img/pay/Appstore_logo.png" alt="">
+                <img class="logo2" src="img/pay/Googleplay_logo.png" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img class="logo2" src="img/pay/pay companies.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>@ 2022, Tech2 etc - HTML CSS Ecommerce WebDev</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
