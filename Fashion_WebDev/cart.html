@@ -22,9 +22,9 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
@@ -36,80 +36,85 @@
 
     <section id="page-header" class="about-header">
         
-        <h2>#KnowUs</h2>
+        <h2>#Let's talk</h2>
 
-        <p>Lorem ipsum dolor sit amit, consectetur</p>
+        <p>LEAVE A MESSAGE, We love to hear from you</p>
     </section>
 
-    <section id="about-head" class="section-p1">
-        <img src="img/Background.jpg" alt="">
-        <div>
-            <h2>Who We Are?</h2>
-            <p>The most flexible, fastest and densest order-fulfillment solution per square foot. 
-                Increase efficiency with the market’s most flexible automated warehouse solution. 
-                Highlights: Serving Multiple Industries, Events Available, Newsletter Available.</p>
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <!-- 테이블 제목 -->
+            <thead>
+                <!-- 테이블 row -->
+                <tr>
+                    <!-- 테이블 data -->
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Products</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/products/product8.jpeg" alt=""></td>
+                    <td>Cartoon Astronaut T-shirts</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.19</td>
+                </tr>
 
-            <abbr title="">Create stunning images with as much or as little control as you like thanks to a choice of Basic and Creative modes</abbr>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/products/product8.jpeg" alt=""></td>
+                    <td>Cartoon Astronaut T-shirts</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.19</td>
+                </tr>
 
-            <br><br>
-
-            <marquee bgcolor="#ccc" loop="-1" scrollamout="5" width="100%">Create stunning images with as much or as 
-                little control as you like thanks to a choice of Basic and Creative modes.
-            </marquee>
-        </div>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/products/product8.jpeg" alt=""></td>
+                    <td>Cartoon Astronaut T-shirts</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.19</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
-    <section id="about-app" class="section-p1">
-        <h1>Download Our <a href="#">App</a></h1>
-        <div class="video">
-            <video autoplay muted loop src="img/about/IMG_7766.MOV"></video>
-        </div>
-    </section>
-
-    <section id="feature" class="section-p1">
-        <div class="fe-box">
-            <img src="img/features/featuree1-removebg-preview.png" alt="">
-            <h6>Free Shipping</h6>
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter your coupon">
+                <button class="normal">Apply</button>
+            </div>
         </div>
 
-        <div class="fe-box">
-            <img src="img/features/featuree1-removebg-preview.png" alt="">
-            <h6>Online Order</h6>
-        </div>
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$335</td>
+                </tr>
 
-        <div class="fe-box">
-            <img src="img/features/featuree1-removebg-preview.png" alt="">
-            <h6>Save Money</h6>
-        </div>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
 
-        <div class="fe-box">
-            <img src="img/features/featuree1-removebg-preview.png" alt="">
-            <h6>Promotions</h6>
-        </div>
-
-        <div class="fe-box">
-            <img src="img/features/featuree1-removebg-preview.png" alt="">
-            <h6>Happy Sell</h6>
-        </div>
-
-        <div class="fe-box">
-            <img src="img/features/featuree1-removebg-preview.png" alt="">
-            <h6>F24/7 Support</h6>
-        </div>
-
-    </section>
-
-    <section id="newsletter" class="section-p1 section-m1" >
-        <!-- 같은 라인에 왼쪽 텍스트를 담당할 div -->
-        <div class="newstext">
-            <h4>Sign Up For newsletter</h4>
-            <p>Get E-mail updates about our latest shop and <span>special offers.</span>  </p>
-        </div>
-
-        <!-- 같은 라인에 sign up form을 담당할 div -->
-        <div class="form">
-            <input type="text" placeholder="Your email address">
-            <button class="normal">Sign Up</button>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$335</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to checkout</button>
         </div>
     </section>
 
