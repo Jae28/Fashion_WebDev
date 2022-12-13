@@ -71,7 +71,7 @@ button.white {
     transition: 0.2s;
 }
 
-body{
+.body{
     width: 100%;
 }
 
@@ -131,7 +131,7 @@ body{
 
 #navbar li a:hover,
 #navbar li a.active{
-    color: #088788;
+    color: #222;
 }
 
 #navbar li a.active::after,
@@ -140,7 +140,7 @@ body{
     content: "";
     width: 30%;
     height: 2px;
-    background: #088788;
+    background: #5c5353;
     position: absolute;
     bottom: -4px;
     left: 20px;
@@ -219,7 +219,7 @@ body{
     text-align: center;
     padding: 25px 15px;
     box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
-    border: 1px solid #cce7d0;
+    border: 1px solid #1a1a1a;
     border-radius: 4px;
     margin: 15px 0;
 }
@@ -277,7 +277,7 @@ body{
     width: 23%;
     min-width: 250px;
     padding: 10px 12px;
-    border: 1px solid #cce7d0;
+    border: 1px solid #5c5353;
     border-radius: 25px;
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
@@ -291,6 +291,7 @@ body{
 
 #product1 .pro img{
     width: 100%;
+    height: 330px;
     border-radius: 20px;
 }
 
@@ -320,7 +321,7 @@ body{
     padding-top: 7px;
     font-size: 15px;
     font-weight: 700;
-    color: #088178;
+    color: #5c5353;
 }
 
 #product1 .pro .cart{
@@ -328,10 +329,10 @@ body{
     height: 40px;
     line-height: 40px;
     border-radius: 50px;
-    background-color: #e8f6ea;
+    background-color: #1a1a1a;
     font-weight: 500;
-    color: #088178;
-    border: 1px solid #cce7d0;
+    color: #fff;
+    border: 1px solid #1a1a1a;
     position: absolute;
     bottom: 20px;
     right: 10px;
@@ -343,9 +344,8 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("img/banner/banner.jpeg");
-    width: 100%;
-    height: 40vh;
+    background-image: url("img/banner/banner2.jpeg");
+    height: 250px;
     background-size: cover;
     background-position: center;
 }
@@ -382,7 +382,7 @@ body{
     justify-content: center;
     align-items: flex-start;
     text-align: center;
-    background-image: url("img/banner/banner.jpeg");
+    background-image: url("img/banner/banner_고흐1.jpeg");
     min-width: 580px;
     height: 50vh;
     background-size: cover;
@@ -391,7 +391,7 @@ body{
 }
 
 #sm-banner .banner-box2{
-    background-image: url("img/banner/banner.jpeg");
+    background-image: url("img/banner/banner_고흐2.png.crdownload");
 }
 
 #sm-banner h4{
@@ -431,7 +431,7 @@ body{
     justify-content: center;
     align-items: flex-start;
     text-align: center;
-    background-image: url("img/banner/banner.jpeg");
+    background-image: url("img/banner/Banner\ 고흐3.jpeg");
     min-width: 30%;
     height: 30vh;
     background-size: cover;
@@ -441,11 +441,11 @@ body{
 }
 
 #banner3 .banner-box2{
-    background-image: url("img/banner/banner.jpeg");
+    background-image: url("img/banner/banner\ 고흐4.jpeg");
 }
 
 #banner3 .banner-box3{
-    background-image: url("img/banner/banner.jpeg");
+    background-image: url("img/banner/banner\ 고흐5.jpeg.crdownload");
 }
 
 #banner3 h2{
@@ -465,7 +465,9 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-image: url(img/back.webp);
+    background-image: url(img/banner/banner3.jpeg);
+    width: 100%px;
+    height: auto;
     background-repeat: no-repeat;
     background-position: 20% 30%;
     background-color: #041e04;
@@ -505,7 +507,7 @@ body{
 }
 
 #newsletter button{
-    background-color: #088178;
+    background-color: #465b52;
     color: #fff;
     white-space: nowrap;
     border-top-left-radius: 0;
@@ -553,6 +555,11 @@ footer .logo2{
     height: auto;
 }
 
+footer .logo3{
+    width: 200px;
+    height: 70px;
+}
+
 footer .follow{
     margin-top: 20px;
 }
@@ -583,7 +590,7 @@ footer .copyright{
 }
 /* Shop Page */
 #page-header{
-    background-image: url("img/banner/banner.jpeg");
+    background-image: url("img/banner/home.jpeg");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -835,7 +842,7 @@ footer .copyright{
 }
 
 #contact-details .map{
-    width: 25%;
+    width: 50%;
     height: 400px;
 }
 
@@ -901,6 +908,10 @@ footer .copyright{
 }
 
 /* Cart page*/
+#cart{
+    overflow-x: auto;
+}
+
 #cart table{
     width: 100%;
     border-collapse: collapse;
@@ -1251,4 +1262,20 @@ footer .copyright{
         width: 100%;
         margin-bottom: 30px;
     }
+
+    /* cart page small*/
+    #cart-add{
+        flex-direction: column;
+    }
+
+    #coupon{
+        width: 100%;
+    }
+
+    #subtotal{
+        width: 100%;
+        padding: 20px;
+    }
+
+
 }
